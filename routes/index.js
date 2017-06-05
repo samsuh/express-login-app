@@ -35,26 +35,27 @@ router.post('/login', passport.authenticate('local-login', {
   failureFlash: true,
 }));
 
-router.get('/auth/facebook', passport.authenticate('facebook', { scope: 'email' }));
-
-router.get('/auth/facebook/callback', passport.authenticate('facebook', {
-  successRedirect: '/profile',
-  failureRedirect: '/',
-}));
-
-router.get('/auth/twitter', passport.authenticate('twitter'));
-
-router.get('/auth/twitter/callback', passport.authenticate('twitter', {
-  successRedirect: '/profile',
-  failureRedirect: '/',
-}));
-
-router.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
-
-router.get('/auth/google/callback', passport.authenticate('google', {
-  successRedirect: '/profile',
-  failureRedirect: '/',
-}));
+//note necessary for local login
+// router.get('/auth/facebook', passport.authenticate('facebook', { scope: 'email' }));
+//
+// router.get('/auth/facebook/callback', passport.authenticate('facebook', {
+//   successRedirect: '/profile',
+//   failureRedirect: '/',
+// }));
+//
+// router.get('/auth/twitter', passport.authenticate('twitter'));
+//
+// router.get('/auth/twitter/callback', passport.authenticate('twitter', {
+//   successRedirect: '/profile',
+//   failureRedirect: '/',
+// }));
+//
+// router.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
+//
+// router.get('/auth/google/callback', passport.authenticate('google', {
+//   successRedirect: '/profile',
+//   failureRedirect: '/',
+// }));
 
 module.exports = router;
 

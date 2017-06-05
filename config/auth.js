@@ -1,3 +1,5 @@
+//not necessary for local login
+
 module.exports = {
   facebookAuth: {
     clientID: '896605267054808',
