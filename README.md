@@ -4,7 +4,7 @@ Simple authentication app using express, node & passport.
 
 Authenticate locally or through Facebook, Twitter or Google.
 
-## Prerequisites 
+## Prerequisites
 
 * [Git](http://git-scm.com/)
 * [Node.js with npm](https://nodejs.org/en/)
@@ -12,7 +12,7 @@ Authenticate locally or through Facebook, Twitter or Google.
 
 ## Installation
 
-* ` git clone https://github.com/danielgynn/express-authentication.git`
+* ` git clone https://github.com/samsuh/express-login-app.git`
 * `cd express-authentication`
 * `npm install`
 * You will need a Mongo instance running. In a new terminal window run `mongod`
